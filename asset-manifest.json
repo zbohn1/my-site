@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/my-site/static/css/main.d11cfc85.css",
+    "main.js": "/my-site/static/js/main.4418037d.js",
+    "static/media/Portrait.png": "/my-site/static/media/Portrait.3933807ead37495d16a3.png",
+    "static/media/Bogart-Alt-Medium.ttf": "/my-site/static/media/Bogart-Alt-Medium.1a09f43a408a05c94615.ttf",
+    "static/media/Biotif-Regular.ttf": "/my-site/static/media/Biotif-Regular.2838c0c4990a9dffa9aa.ttf",
+    "static/media/HelenaDash.png": "/my-site/static/media/HelenaDash.8c37540fa35539cb9aad.png",
+    "static/media/Biotif-Bold.ttf": "/my-site/static/media/Biotif-Bold.e7b5639d928ffc1356de.ttf",
+    "static/media/ZS.png": "/my-site/static/media/ZS.da918288809d3bb95fc8.png",
+    "static/media/ParakeetIcon.png": "/my-site/static/media/ParakeetIcon.377407424a5eeee0a966.png",
+    "static/media/ParakeetHome.png": "/my-site/static/media/ParakeetHome.d9c8c101a6b547fe7fa2.png",
+    "static/media/ParakeetCommunity.png": "/my-site/static/media/ParakeetCommunity.d31ae763a6e9440501a6.png",
+    "static/media/ParakeetPhysician.png": "/my-site/static/media/ParakeetPhysician.6656daacf8ab84238911.png",
+    "static/media/ZSImg1.png": "/my-site/static/media/ZSImg1.a87d3d391b2e08d992e4.png",
+    "static/media/Helvetica Neue UltraLight.ttf": "/my-site/static/media/Helvetica Neue UltraLight.9231a9954e349641acbd.ttf",
+    "static/media/JohnBrennan.png": "/my-site/static/media/JohnBrennan.4397031b58bfe1a27ca6.png",
+    "static/media/ZSImg2.png": "/my-site/static/media/ZSImg2.3875b2b929755bdfe54e.png",
+    "static/media/WendyKopp.png": "/my-site/static/media/WendyKopp.2a8d3e864a046cdc7f10.png",
+    "static/media/Helena.png": "/my-site/static/media/Helena.8c0632835cef454fbf49.png",
+    "static/media/BeatriceFihn.png": "/my-site/static/media/BeatriceFihn.9f8f214e43f8e6eb51c4.png",
+    "static/media/EvanSpiegal.png": "/my-site/static/media/EvanSpiegal.7adfc29af1b30b70458c.png",
+    "static/media/RayChambers.png": "/my-site/static/media/RayChambers.c2e2c4e3b23c241b1c66.png",
+    "static/media/BigLightbulb.png": "/my-site/static/media/BigLightbulb.68ce53120697ed09f46f.png",
+    "static/media/ToDoImg2.png": "/my-site/static/media/ToDoImg2.4ce0b492d9396f549ea1.png",
+    "static/media/RichLesser.png": "/my-site/static/media/RichLesser.642dc1bc21bda9c864b5.png",
+    "static/media/Helvetica Neue Medium Extended.ttf": "/my-site/static/media/Helvetica Neue Medium Extended.372d58a9bf10285baebe.ttf",
+    "index.html": "/my-site/index.html",
+    "main.d11cfc85.css.map": "/my-site/static/css/main.d11cfc85.css.map",
+    "main.4418037d.js.map": "/my-site/static/js/main.4418037d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d11cfc85.css",
+    "static/js/main.4418037d.js"
+  ]
+}
