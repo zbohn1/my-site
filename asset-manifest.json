@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.d11cfc85.css",
-    "main.js": "/my-site/static/js/main.e5c7eef6.js",
+    "main.js": "/my-site/static/js/main.c7859577.js",
     "static/media/Portrait.png": "/my-site/static/media/Portrait.3933807ead37495d16a3.png",
     "static/media/Bogart-Alt-Medium.ttf": "/my-site/static/media/Bogart-Alt-Medium.1a09f43a408a05c94615.ttf",
     "static/media/Biotif-Regular.ttf": "/my-site/static/media/Biotif-Regular.2838c0c4990a9dffa9aa.ttf",
@@ -27,10 +27,10 @@
     "static/media/Helvetica Neue Medium Extended.ttf": "/my-site/static/media/Helvetica Neue Medium Extended.372d58a9bf10285baebe.ttf",
     "index.html": "/my-site/index.html",
     "main.d11cfc85.css.map": "/my-site/static/css/main.d11cfc85.css.map",
-    "main.e5c7eef6.js.map": "/my-site/static/js/main.e5c7eef6.js.map"
+    "main.c7859577.js.map": "/my-site/static/js/main.c7859577.js.map"
   },
   "entrypoints": [
     "static/css/main.d11cfc85.css",
-    "static/js/main.e5c7eef6.js"
+    "static/js/main.c7859577.js"
   ]
 }
