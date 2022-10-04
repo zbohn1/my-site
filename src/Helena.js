@@ -21,7 +21,7 @@ export default function Helena() {
         industries, generations, geographies, and beliefs. Helena chooses
         projects that could have a global impact and matches interested members
         with these projects. The members contribute however they can, by
-        providing their advice, investing in the solution, or connec ting the
+        providing their advice, investing in the solution, or connecting the
         project with people who can help. Helena also leverages its own funds
         and human capital to work directly on the problems. The most significnat
         project, COVID-19 Response, moved over 37M pieces of PPE to hospitals

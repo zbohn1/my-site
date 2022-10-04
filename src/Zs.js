@@ -24,7 +24,7 @@ export default function Zs() {
         company’s colorectal cancer offering.
       </ContentNoImg>
       <ContentNoImg title="Our Process" margin="afterText">
-        First, we created a discussion guide, then we conducted qualitative
+        First, we created a discussion guide. Then, we conducted qualitative
         interviews using this guide and created a qualitative report for the
         client. Next, we used the insights from the qualitative interviews to
         create a quantitative survey for a higher sample population. We then
@@ -60,7 +60,7 @@ export default function Zs() {
         insights for the final presentation.{" "}
       </ContentXImage>
       <ContentXImage
-        title="Results and Recommendation"
+        title="Results and Reflection"
         src={require("./ZSImg2.png")}
       >
         We used the framework to score each parameter and provide a final

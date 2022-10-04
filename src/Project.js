@@ -2,19 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import styled from "styled-components/macro";
 import GlobalStyles from "./GlobalStyles";
+import { Link } from "react-router-dom";
 
 function Project(props) {
   const [projectTitle, setProjectTitle] = React.useState("");
   return (
-    <Wrapper>
-      <ProjectImage
-        src={props.src}
-        onMouseOver={() => setProjectTitle(props.title)}
-        onMouseOut={() => setProjectTitle("")}
-      />
-      <Title onMouseOver={() => setProjectTitle(props.title)}>
-        {projectTitle}
-      </Title>
+    <Wrapper
+      style={
+        props.active == props.value || props.active == "All"
+          ? { display: "block" }
+          : { display: "none" }
+      }
+    >
+      <ImageLink to={props.to}>
+        <ProjectImage
+          src={props.src}
+          onMouseOver={() => setProjectTitle(props.title)}
+          onMouseOut={() => setProjectTitle("")}
+        />
+        <Title
+          onMouseOver={() => setProjectTitle(props.title)}
+          color={props.color}
+        >
+          {projectTitle}
+        </Title>
+      </ImageLink>
     </Wrapper>
   );
 }
@@ -26,13 +38,19 @@ const ProjectImage = styled.img`
   max-height: 500px;
   display: block;
   vertical-align: bottom;
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 const Wrapper = styled.div`
-  flex: 1 1 50%;
+  flex-basis: 49%;
   position: relative;
   &:hover {
     opacity: 0.625;
+  }
+  @media (max-width: 700px) {
+    flex-basis: 100%;
   }
 `;
 
@@ -46,7 +64,7 @@ const Title = styled.h2`
   margin: auto;
   z-index: 0.5;
   font-size: 40px;
-  color: #757d7e;
+  color: ${(props) => props.color};
   font-family: "Regular";
 
   @media (max-width: 900px) {
@@ -55,4 +73,13 @@ const Title = styled.h2`
   @media (max-width: 700px) {
     font-size: 40px;
   }
+`;
+
+const ImageLink = styled(Link)`
+  flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  display: block;
+  vertical-align: bottom;
 `;

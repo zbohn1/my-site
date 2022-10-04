@@ -65,6 +65,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
   background-color: #f5f5f5;
   margin: 0px 57px;
+  @media (max-width: 400px) {
+    margin: 0px 20px;
+  }
 `;
 
 const ContentWrapper = styled.div`

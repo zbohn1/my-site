@@ -8,7 +8,9 @@ function FirstContent() {
     <BigWrapper>
       <TextWrapper>
         <Title>Hi, I'm Zach.</Title>
-        <Title>A Design Technologist.</Title>
+        <Title>
+          A <Gradient>Design Technologist.</Gradient>
+        </Title>
         <Description>
           I designed and coded this website using React to showcase my projects
           and skills. I am a developer and designer currently getting my{" "}
@@ -36,8 +38,8 @@ const BigWrapper = styled.div`
   @media (max-width: 700px) {
     flex-wrap: wrap;
   }
-  @media (max-width: 300px) {
-    margin: 0;
+  @media (max-width: 400px) {
+    margin: 0px 20px;
   }
 `;
 
@@ -70,6 +72,7 @@ const Description = styled.h6`
     font-size: 18px;
     margin-bottom: 25px; 
     text-align: center;
+    width: 100%;
   }
 `;
 
@@ -78,7 +81,11 @@ const TextWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+
+  @media (max-width: 700px) {
+    align-items: center;
+  }
 `;
 
 const ImgWrapper = styled.div`
@@ -93,4 +100,12 @@ const ExternalLink = styled.a`
   &:hover {
     color: #2997ff;
   }
+`;
+
+const Gradient = styled.span`
+  background-image: linear-gradient(#08a38c 40%, #006cb0);
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  color: transparent;
+  margin: 0;
 `;

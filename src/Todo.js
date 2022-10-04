@@ -20,13 +20,18 @@ export default function Todo() {
         which I completed at the end of taking Harvard University’s CS50. It is
         a full-stack to-do-list app that was created with a Python and SQL
         back-end and an HTML, CSS, and Javascript front-end. I also used the
-        Flask framework. Users can create, and delete tasks and label them as
+        Flask framework. Users can create and delete tasks and label them as
         today, tomorrow, and long term, as well as priority one, priority two,
         and priority three. The tasks are automatically sorted and color-coded
-        according to these timelines and priorities. You can create, update, and
-        delete tasks, and you can also view your deleted tasks on the history
-        tab. Check out the app in the video below, or check out the Github
-        repository <GitLink href="www.github.com">here.</GitLink>{" "}
+        according to these timelines and priorities. You can also view your
+        deleted tasks on the history tab. Also, for each task, you can click the
+        start timer button, and a timer will start so that you can track how
+        much time you are spending on tasks. Clicking the stop timer button will
+        reset the timer. Check out the app in the video below, or check out the
+        Github repository{" "}
+        <ExternalLink href="https://github.com/zbohn1/ToDo/tree/main">
+          here
+        </ExternalLink>{" "}
       </ContentNoImg>
       <FlexContainer>
         <ImgContainer>
@@ -70,4 +75,12 @@ const GitLink = styled.a`
   color: black;
   &:hover {
     color: #2997ff;
+`;
+
+const ExternalLink = styled.a`
+  text-decoration: underline;
+  color: black;
+  &:hover {
+    color: #2997ff;
+  }
 `;

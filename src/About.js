@@ -24,7 +24,7 @@ export default function About() {
           <Sectioner />
           <AboutContent
             header="My Background:"
-            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging technologies. Previously, I spent two years in management consulting, where I advised on new product launches and also performed market research. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders. "
+            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging and creative technologies. I am currently interning at Seminaut Games Studios as a front-end development and UX design intern. Previously, I spent two years in management consulting, where I advised on corporate strategy, performed marketing and other market research, and helped design and launch a new consulting digital product. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders. "
           />
           <AboutContent
             header="My Process:"
@@ -32,7 +32,7 @@ export default function About() {
           />
           <AboutContent
             header="Technical Skills: "
-            text="HTML5, CSS3, JavaScript, React, Python, SQL, Flask, Figma, Styled-Components"
+            text="HTML5, CSS3, JavaScript, React, ThreeJS, P5JS, SASS, Python, SQL, Flask, Figma, Styled-Components"
           />
           <Link to="/contact">
             <Button>Get in Touch</Button>
@@ -54,6 +54,10 @@ const FlexContainer = styled.div`
 
   @media (max-width: 700px) {
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 50px;
   }
 `;
 
@@ -80,6 +84,7 @@ const Title = styled.h2`
     line-height: 40px;
     text-align: center;
     margin-bottom: 19px;
+    font-size: 35px;
   }
 `;
 const ImgContainer = styled.div`
@@ -111,7 +116,7 @@ const Button = styled.button`
   border-radius: 7px;
   border-color: #000000;
   font-family: "Regular", "Hnmedium", Helvetica, Arial, sans-serif;
-  margin-top: 20px;
+  margin-top: 10px;
   &:hover {
     opacity: 0.71;
   }

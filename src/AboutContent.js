@@ -21,7 +21,7 @@ const Header = styled.h6`
 
 const Text = styled.p`
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-family: "Regular", "Hnmedium", Helvetica, Arial, sans-serif;
   color: #000000;
   opacity: 0.71;

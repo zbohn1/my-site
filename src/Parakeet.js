@@ -17,7 +17,7 @@ export default function Parakeet() {
         receive health information tailored to their child’s development stage,
         and connect with one another about pregnancy and early childcare issues.
         I founded the company, recruited two other designers and a pediatrician,
-        raised $75,000 and led it until I was forced to close it down due to
+        raised $75,000, and led it until I was forced to close it down due to
         health issues. <Break />I was involved with every aspect of the business
         as our team was small. This included UX and UI design, problem and
         market validation, and brand and business planning. At this point in my
@@ -28,7 +28,7 @@ export default function Parakeet() {
         Health care is disorganized and complex. I had been interested for quite
         some time in the digital health space and creating an experience that
         helped solve this problem for a small subset of this market by combining
-        information, phyisican access, and community, which is noticeably absent
+        information, physician access, and community, which is noticeably absent
         for most health conditions. The first question I faced was which patient
         type to target. After creating a list of potential options, I vetted
         them by the strength of the problem for that particular segment, their
@@ -54,13 +54,13 @@ export default function Parakeet() {
           Market Size Presents Viable Economic Opportunity:{" "}
         </BoldSpan>{" "}
         There are 4 million babies born in the U.S. each year, and new parents
-        spend an average of $12,000 on them, prersenting a more viable economic
+        spend an average of $12,000 on them, presenting a more viable economic
         opportunity than many other demographics. <Break />{" "}
         <BoldSpan>Existing but Flawed Solutions: </BoldSpan>To this day, many
         parents turn to BabyCenter for information. BabyCenter lacks easy access
         to physician-vetted content and has an outdated UI. And many new parent
         groups are on Facebook, which isn’t made for health care. These
-        competitors proved that there is a need but were flawed solutions, and
+        competitors proved that there was a need but were flawed solutions, and
         most new parents we interviewed were dissatisfied with them.{" "}
       </ContentNoImg>
       <ContentNoImg title="Brand and Visual Identity" margin="afterText">
@@ -78,7 +78,7 @@ export default function Parakeet() {
         clear, clean but comfortable, bright but not too cheerful, white space{" "}
         <Break /> <BoldSpan>Name: </BoldSpan> Parakeet - we wanted an animal
         name for it to be easily relatable. Parakeets are small, bright, cute
-        bird that are friendly, sociable, and communicative, which aligned with
+        birds that are friendly, sociable, and communicative, which aligned with
         our brand identity and evoked images that corresponed well to babies.
       </ContentNoImg>
       <ContentNoImg title="Wireframes and Mock-ups" margin="afterText">
@@ -88,27 +88,27 @@ export default function Parakeet() {
         another designer to create these. Below you can find the home screen,
         physician profile screen, and community feed screen. The home screen was
         designed so that new parents could quickly access everything they need
-        and also be exposed to relevant, helpful content. The version below was
-        designed from the perspective of an expectant mom. It has a quick access
-        tab that allows users to access their care plan, find a doctor, and
-        track their pregnancy, among other tools. It also has a “for today” tab
-        that allows the mom to view advice and potential “to-dos” for the day,
-        as well as articles and posts from the community towards the bottom. The
-        physician profile section was designed to provide a detailed and
-        transparent picture of each pediatrician and gynecologist. At the top,
-        we included the quick information that everyone wants to see. We then
-        broke up the bottom into an “About” and “Review” section. The about
-        section, which isn’t pictured below, provided more information about the
-        physician, while the review section goes beyond sites like ZocDoc by
-        allowing patients to tag skills and traits about the physician, which
-        was an idea we took from patient research. Finally, the community page
-        was designed to allow parents to find answers to common questions, join
-        groups of moms with similar location, interests, or birth timelines,
-        read more in-depth stories about particular topics (which feature arose
-        from a need discovered in research to hear in-depth inspiration from
-        peers), and save posts or questions that are helpful. Unlike competitors
-        such as BabyCenter, our feed was designed for exploration (rather than
-        just optimized to answer specific pre-existing questions).{" "}
+        and so they could also be exposed to relevant, helpful content. The
+        version below was designed from the perspective of an expectant mom. It
+        has a quick access tab that allows users to access their care plan, find
+        a doctor, and track their pregnancy, among other tools. It also has a
+        “for today” tab that allows the mom to view advice and potential
+        “to-dos” for the day, as well as articles and posts from the community
+        towards the bottom. The physician profile section was designed to
+        provide a detailed and transparent picture of each pediatrician and
+        gynecologist. At the top, we included the quick information that
+        everyone wants to see. We then broke up the bottom into an “About” and
+        “Review” section. The about section, which isn’t pictured below,
+        provided more information about the physician, while the review section
+        goes beyond sites like ZocDoc by allowing patients to tag skills and
+        traits about the physician, which was an idea we took from patient
+        research. Finally, the community page was designed to allow parents to
+        find answers to common questions, join groups of moms with similar
+        locations, interests, or birth timelines, read more in-depth stories
+        about particular topics (which arose from our user research), and save
+        posts or questions that are helpful. Unlike competitors such as
+        BabyCenter, our feed was designed for exploration (rather than just
+        optimized to answer specific pre-existing questions).{" "}
       </ContentNoImg>
       <FlexContainer>
         <ImgContainer>
