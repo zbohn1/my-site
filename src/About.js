@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import AboutContent from "./AboutContent.js";
 import Divider from "./Divider.js";
+import Resume from "./resume.pdf";
 
 export default function About() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
+      <Header color="#f5f5f5" />
       <FlexContainer>
         <ImgContainer>
           <Portrait src={require("./Portrait.png")} />
@@ -24,7 +25,7 @@ export default function About() {
           <Sectioner />
           <AboutContent
             header="My Background:"
-            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging and creative technologies. I am currently interning at Seminaut Games Studios as a front-end development and UX design intern. Previously, I spent two years in management consulting, where I advised on corporate strategy, performed marketing and other market research, and helped design and launch a new consulting digital product. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders. "
+            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging and creative technologies. I am currently interning at Seminaut Games Studios as a front-end development and UX design intern. Previously, I spent two years in management consulting, where I advised on corporate strategy, performed marketing and other market research, and helped design and launch a new consulting digital product. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders."
           />
           <AboutContent
             header="My Process:"
@@ -34,9 +35,14 @@ export default function About() {
             header="Technical Skills: "
             text="HTML5, CSS3, JavaScript, React, ThreeJS, P5JS, SASS, Python, SQL, Flask, Figma, Styled-Components"
           />
-          <Link to="/contact">
-            <Button>Get in Touch</Button>
-          </Link>
+          <ButtonContainer>
+            <Link to="/contact">
+              <Button>Get in Touch</Button>
+            </Link>
+            <a href={Resume} target="_blank">
+              <Button2> View Resume </Button2>
+            </a>
+          </ButtonContainer>
         </ContentContainer>
       </FlexContainer>
     </div>
@@ -120,4 +126,25 @@ const Button = styled.button`
   &:hover {
     opacity: 0.71;
   }
+`;
+
+const Button2 = styled.button`
+  height: 61px;
+  width: 222px;
+  background-color: #565d60;
+  color: #f5f5f5;
+  font-size: 20px;
+  border-radius: 7px;
+  border-color: #565d60;
+  font-family: "Regular", "Hnmedium", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  &:hover {
+    opacity: 0.71;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 `;

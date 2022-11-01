@@ -5,12 +5,12 @@ import GlobalStyles from "./GlobalStyles";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu.js";
 
-function Header() {
+function Header(props) {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
   return (
-    <BigContainer>
-      <Wrapper>
+    <BigContainer color={props.color}>
+      <Wrapper color={props.color}>
         <Spacer></Spacer>
         <ContentWrapper>
           <StyledLink to="/">
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f5f5;
+  background-color: ${(props) => props.color};
   margin: 0px 57px;
   @media (max-width: 400px) {
     margin: 0px 20px;
@@ -131,12 +131,10 @@ const ExternalIcon = styled.img`
 `;
 
 const BigContainer = styled.header`
-  -webkit-position: sticky;
-  position: sticky;
   top: 0;
   z-index: 1;
   width: 100vw;
-  background-color: #f5f5f5;
+  background-color: ${(props) => props.color};
 `;
 
 export default Header;

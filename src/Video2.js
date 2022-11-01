@@ -3,28 +3,26 @@ import ReactDOM from "react-dom/client";
 import styled from "styled-components/macro";
 import GlobalStyles from "./GlobalStyles";
 
-export default function ContentXImage(props) {
+export default function Video2(props) {
   const marginStyles = {
     firstContent: 50 + "px",
     middle: 25 + "px",
     lastContent: 0 + "px",
   };
   return (
-    <FlexContainer
-      color={props.color}
-      style={{
-        paddingTop: marginStyles[props.margin1],
-        paddingBottom: marginStyles[props.margin2],
-      }}
-    >
-      <ImgContainer>
-        <LeftImage src={props.src} />
-      </ImgContainer>
-      <ContentContainer>
-        <Title> {props.title}</Title>
-        <Text> {props.children}</Text>
-      </ContentContainer>
-    </FlexContainer>
+    <div>
+      <FlexContainer
+        color={props.color}
+        style={{
+          paddingTop: marginStyles[props.margin1],
+          paddingBottom: marginStyles[props.margin2],
+        }}
+      >
+        <LeftVideo width="10px" height="20vw" controls loop>
+          <source src={props.src} type="video/mp4" />
+        </LeftVideo>
+      </FlexContainer>
+    </div>
   );
 }
 
@@ -34,9 +32,7 @@ const FlexContainer = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 48px;
-  justify-content: center;
   background-color: ${(props) => props.color};
-
   @media (max-width: 700px) {
     flex-direction: column;
     gap: 30px;
@@ -45,10 +41,14 @@ const FlexContainer = styled.div`
   }
 `;
 
-const LeftImage = styled.img`
+const LeftVideo = styled.video`
   min-width: 300px;
-  height: 100%;
-  width: 100%;
+  height: 45vw;
+  width: 70vw;
+  @media (max-width: 700px) {
+    width: 90vw;
+    height: 55vw;
+  }
 `;
 
 const ImgContainer = styled.div`

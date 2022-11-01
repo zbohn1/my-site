@@ -5,12 +5,19 @@ import GlobalStyles from "./GlobalStyles";
 
 export default function ContentNoImg(props) {
   const marginStyles = {
-    afterImage: 50 + "px",
-    afterText: 43 + "px",
+    firstContent: 50 + "px",
+    middle: 25 + "px",
+    lastContent: 0 + "px",
   };
 
   return (
-    <FlexContainer style={{ marginTop: marginStyles[props.margin] }}>
+    <FlexContainer
+      style={{
+        paddingTop: marginStyles[props.margin1],
+        paddingBottom: marginStyles[props.margin2],
+      }}
+      color={props.color}
+    >
       <ContentContainer>
         <Title> {props.title}</Title>
         <Text> {props.children}</Text>
@@ -20,14 +27,17 @@ export default function ContentNoImg(props) {
 }
 
 const FlexContainer = styled.div`
-  margin-left: 57px;
-  margin-right: 57px;
+  padding-left: 150px;
+  padding-right: 150px;
   margin-bottom: 0px;
   display: flex;
   align-items: flex-start;
+  background-color: ${(props) => props.color};
 
   @media (max-width: 700px) {
     flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 

@@ -4,8 +4,19 @@ import styled from "styled-components/macro";
 import GlobalStyles from "./GlobalStyles";
 
 export default function ContentXVideo(props) {
+  const marginStyles = {
+    firstContent: 50 + "px",
+    middle: 25 + "px",
+    lastContent: 0 + "px",
+  };
   return (
-    <FlexContainer>
+    <FlexContainer
+      color={props.color}
+      style={{
+        paddingTop: marginStyles[props.margin1],
+        paddingBottom: marginStyles[props.margin2],
+      }}
+    >
       <ImgContainer>
         <LeftVideo width="560" height="315" autoPlay loop muted>
           <source src={props.src} type="video/mp4" />
@@ -20,17 +31,18 @@ export default function ContentXVideo(props) {
 }
 
 const FlexContainer = styled.div`
-  margin-left: 57px;
-  margin-right: 57px;
-  margin-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
   display: flex;
   align-items: flex-start;
   gap: 48px;
   justify-content: center;
-
+  background-color: ${(props) => props.color};
   @media (max-width: 700px) {
     flex-direction: column;
     gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 

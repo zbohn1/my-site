@@ -6,15 +6,19 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentXVideo from "./ContentXVideo.js";
 import ContentNoImg from "./ContentNoImg.js";
+import PrevNext from "./PrevNext.js";
 
 export default function ProductFeedback() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
+      <Header color="#efe6fe" />
       <ContentXVideo
         src={require("./ProductFeedbackScreencast.mp4")}
         title="Product Feedback Web App"
+        margin1="firstContent"
+        margin2="middle"
+        color="#efe6fe"
       >
         I wanted to demonstrate my web development skills and learn more in the
         process, so I created this responsive web app that is meant for product
@@ -24,7 +28,7 @@ export default function ProductFeedback() {
         are different sections for current feedback (on the home screen), and
         planned, in-progress, and live feedback (on the roadmap). I received the
         designs from a website called Frontend Mentor, which provides challenges
-        for front-end developeres. This was the hardest one they offered.{" "}
+        for front-end developers. This was the hardest one they offered.{" "}
         <Break /> The languages I used for the web app are HTML5, CSS3 (using
         SASS as a pre-processor), and React. You can view the repository with
         the code{" "}
@@ -37,36 +41,53 @@ export default function ProductFeedback() {
           <FeedbackButton>Live Web App</FeedbackButton>
         </ExternalLink>
       </ContentXVideo>
-      <ContentNoImg margin="afterImage" title="Problem">
-        As the design was already set, the key problem for this project was how
-        to implement the design with technology. In addition to what languages
-        to choose, I needed to learn how to manage state across different
-        routes, how to manage the user data, and what components to create for
-        the application. There were also challenges in the design like building
-        custom selects, buttons, and other components, making everything
-        responsive with different menus, as well as how to make everything
-        accessible.
+      <ContentNoImg
+        margin="afterImage"
+        title="Problem"
+        margin1="middle"
+        margin2="middle"
+      >
+        The key problem for this project was how to implement the design with
+        technology. In addition to what languages to choose, I needed to learn
+        how to manage state across different routes (I was using React Router),
+        how to create, update, and delete the user JSON data, and how to create
+        the best possible component architecture. There were also challenges in
+        the UI like building custom selects, buttons, and other components,
+        using SASS to make the CSS as modular as possible, making everything
+        responsive with different menus, and ensuring everything was accessible.
       </ContentNoImg>
-      <ContentNoImg margin="afterText" title="Solution">
+      <ContentNoImg
+        margin="afterText"
+        title="Solution"
+        margin1="middle"
+        margin2="middle"
+        color="#efe6fe"
+      >
         I chose React for the application because there were many reusable
         pieces of design that I could turn into components, and also because I
-        wanted to sharpen my React skills. To solve the problem of state on
-        multiple routes, I used React's ContextAPI. I created state that
-        encapsulated all of the JSON data across components and then updated
-        that data based on different functions that applied to specific
-        components. I made many modular components, trying to follow SOLID
-        principles in the process. And for the custom selects and buttons, I
-        opted to make use of the native item so that I could maintain the
-        accessibility advantages, but hiding it so that I could render custom
-        CSS and functionality on top.
+        wanted to sharpen my React skills. To solve the problem of state that
+        persisted across multiple routes, I used React's ContextAPI. I created
+        state that encapsulated all of the JSON data across components and then
+        added, deleted, and updated that data based on different functions that
+        applied to specific components. I made many modular components, trying
+        to follow SOLID principles in the process. And for the custom selects
+        and buttons, I opted to make use of the native item so that I could
+        maintain the accessibility advantages, but hiding it so that I could
+        render custom CSS and functionality on top.
       </ContentNoImg>
-      <ContentNoImg margin="afterText" title="Reflection">
+      <ContentNoImg
+        margin="afterText"
+        title="Reflection"
+        margin1="middle"
+        margin2="lastContent"
+      >
         I had not been introduced to the single responsibility principle when I
         started this project, so although I intuitively followed it to a large
         extent, there were still some components that had multiple functions. If
         I were to refactor this code, I would break up some of my components
         into even smaller components and functions.
       </ContentNoImg>
+      <PrevNext prev="/clock" next="/parakeet" />
     </div>
   );
 }

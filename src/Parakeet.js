@@ -6,13 +6,23 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentXImage from "./ContentXImage.js";
 import ContentNoImg from "./ContentNoImg.js";
+import PrevNext from "./PrevNext.js";
+import Quote from "./Quote.js";
+import QuoteSection from "./QuoteSection";
+import LogoSection from "./LogoSection";
 
 export default function Parakeet() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentXImage title="Parakeet" src={require("./ParakeetIcon.png")}>
+      <Header color="#d3e4fe" />
+      <ContentXImage
+        title="Parakeet"
+        src={require("./ParakeetIcon.png")}
+        color="#d3e4fe"
+        margin1="firstContent"
+        margin2="middle"
+      >
         Parakeet is an app for expectant and new parents to find physicians,
         receive health information tailored to their child’s development stage,
         and connect with one another about pregnancy and early childcare issues.
@@ -24,7 +34,12 @@ export default function Parakeet() {
         career, I was not a developer, so I did not code the app myself,
         although I did help create an InVision prototype.
       </ContentXImage>
-      <ContentNoImg title="Problem and Customer Validation" margin="afterImage">
+      <ContentNoImg
+        title="Problem and Customer Validation"
+        margin="afterImage"
+        margin1="middle"
+        margin2="middle"
+      >
         Health care is disorganized and complex. I had been interested for quite
         some time in the digital health space and creating an experience that
         helped solve this problem for a small subset of this market by combining
@@ -39,8 +54,8 @@ export default function Parakeet() {
         solution for expectant and new parents, because of the results of our
         market research, which are below: <Break />{" "}
         <BoldSpan>Overwhelmed and Lonely: </BoldSpan>
-        Amidst the excitement of pareenthood, primary and secondary research
-        revealed parents reported feeling overwhelmeed with all they had to
+        Amidst the excitement of parenthood, primary and secondary research
+        revealed parents reported feeling overwhelmed with all they had to
         learn, and sometimes lonely. These needs validated the usefulness of
         easy access to medically-vetted content, high-quality, accessible
         physicians, and a community of peers. <Break />{" "}
@@ -63,7 +78,27 @@ export default function Parakeet() {
         competitors proved that there was a need but were flawed solutions, and
         most new parents we interviewed were dissatisfied with them.{" "}
       </ContentNoImg>
-      <ContentNoImg title="Brand and Visual Identity" margin="afterText">
+      <QuoteSection>
+        <Quote>
+          “Being a new mom is overwhelming. There is so much to learn, and there
+          is not one place to go to for all of my questions.”
+        </Quote>
+        <Quote>
+          “I use BabyCenter sometimes to get answers to my questions, but it's
+          hard to discover new information on that site unless I know what I'm
+          looking for.”
+        </Quote>
+        <Quote>
+          “I definitely have high motivation to keep my baby healthy, even more
+          so than myself.”{" "}
+        </Quote>
+      </QuoteSection>
+      <ContentNoImg
+        title="Brand and Visual Identity"
+        margin1="middle"
+        margin2="middle"
+        color="#d3e4fe"
+      >
         I recruited three people to the team: a pediatrician, who was in charge
         of medical content, a software engineer, and another designer to work
         with me. We created brand values, tone, visual guidelines, and personas.
@@ -81,7 +116,13 @@ export default function Parakeet() {
         birds that are friendly, sociable, and communicative, which aligned with
         our brand identity and evoked images that corresponed well to babies.
       </ContentNoImg>
-      <ContentNoImg title="Wireframes and Mock-ups" margin="afterText">
+      <LogoSection color="#d3e4fe" />
+      <ContentNoImg
+        title="Wireframes and Mock-ups"
+        margin="afterText"
+        margin1="middle"
+        margin2="middle"
+      >
         {" "}
         We made wireframes and low-fidelity color mock-ups in Sketch. and then
         created high-fidelity color mock-ups of the entire app. I worked with
@@ -121,7 +162,13 @@ export default function Parakeet() {
           <Img src={require("./ParakeetCommunity.png")} />
         </ImgContainer>
       </FlexContainer>
-      <ContentNoImg title="Reflection" margin="afterText">
+      <ContentNoImg
+        title="Reflection"
+        margin="afterText"
+        color="#d3e4fe"
+        margin1="middle"
+        margin2="lastContent"
+      >
         We accomplished quite a bit before I was forced to shut the start-up
         down due to health problems, and the start-up was a great learning
         experience. However, knowing what I know now, next time I think that we
@@ -132,6 +179,7 @@ export default function Parakeet() {
         in a minimum viable product, rather than focusing on building out a very
         large amount of functionality upfront.{" "}
       </ContentNoImg>
+      <PrevNext prev="/productfeedback" next="/todo" color="#d3e4fe" />
     </div>
   );
 }
@@ -147,8 +195,8 @@ const BoldSpan = styled.span`
 
 const FlexContainer = styled.div`
   display: flex;
-  margin-left: 57px;
-  margin-right: 47px;
+  padding-left: 150px;
+  padding-right: 150px;
   gap: 5vw;
   margin-top: 20px;
   @media (max-width: 700px) {

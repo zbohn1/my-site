@@ -6,13 +6,19 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentXVideo from "./ContentXVideo.js";
 import ContentNoImg from "./ContentNoImg.js";
+import PrevNext from "./PrevNext.js";
 
 export default function Clock() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentXVideo src={require("./clock.mp4")} title="Rainbow Clock">
+      <Header color="#f5f5f5" />
+      <ContentXVideo
+        src={require("./clock.mp4")}
+        title="Rainbow Clock"
+        margin1="firstContent"
+        margin2="lastContent"
+      >
         I made this animation in P5JS, a javascript library built on top of the
         canvas html element. It was for my Creative Code Class. Our assignment
         was to build something related to time. Each of the rings of the
@@ -22,6 +28,7 @@ export default function Clock() {
         rainbow to celebrate LGBTQ+ family members. I used a sin wave to create
         the smooth, pulsating effect.
       </ContentXVideo>
+      <PrevNext prev="/icicles" next="/productfeedback" />
     </div>
   );
 }

@@ -6,13 +6,18 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentXVideo from "./ContentXVideo.js";
 import ContentNoImg from "./ContentNoImg.js";
+import PrevNext from "./PrevNext.js";
 
 export default function Tornado() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentXVideo src={require("./tornado.mp4")} title="ThreeJS Tornado">
+      <Header color="#f5f5f5" />
+      <ContentXVideo
+        src={require("./tornado.mp4")}
+        title="ThreeJS Tornado"
+        margin1="firstContent"
+      >
         I made this 3D tornado in Three.js, a 3D javascript library built on top
         of WebGL. It was for my class Creative Code. It was good practice with
         object-oriented programming and 3D technologies. The tornado is an
@@ -22,6 +27,7 @@ export default function Tornado() {
         so the inner rings spin faster than the outer rings, like a real
         tornado. And like a real tornado, I made the movement somewhat random.
       </ContentXVideo>
+      <PrevNext prev="/audiovisualizer" next="/helena" />
     </div>
   );
 }

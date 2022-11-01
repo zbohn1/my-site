@@ -7,13 +7,19 @@ import Header from "./Header.js";
 import ContentNoImg from "./ContentNoImg";
 import HelenaImg from "./HelenaImg";
 import ContentXImage from "./ContentXImage";
+import PrevNext from "./PrevNext.js";
 
 export default function Helena() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentNoImg title="Helena" margin="afterImage">
+      <Header color="#d3e4fe" />
+      <ContentNoImg
+        title="Helena"
+        margin1="firstContent"
+        margin2="middle"
+        color="#d3e4fe"
+      >
         <HelenaLink href="http://www.helena.org">Helena.org</HelenaLink> is a
         global problem-solving organization. Helena uses its own resources and a
         group of influential members to work on projects that implement
@@ -28,7 +34,12 @@ export default function Helena() {
         and health care workers that needed them. The organization has also
         raised $21M+ to date.
       </ContentNoImg>
-      <ContentNoImg title="Our Process" margin="afterText">
+      <ContentNoImg
+        title="Our Process"
+        margin="afterText"
+        margin1="middle"
+        margin2="middle"
+      >
         I co-founded the organization with my partner, Henry Elkus. First, we
         identified a problem, which was that influential people often don’t
         contribute to social good in the ways that could have the most impact.
@@ -44,14 +55,20 @@ export default function Helena() {
         materials, recruited members, created fundraising documents, and finally
         began projects.
       </ContentNoImg>
-      <ContentNoImg title="Members" margin="afterText">
+      <ContentNoImg
+        title="Members"
+        margin="afterText"
+        margin1="middle"
+        margin2="middle"
+        color="#d3e4fe"
+      >
         After iterating on the solution and value proposition, we created
         marketing materials that explained the benefits of the organization and
         then customized that outreach for each individual. We used both cold and
         warm outreach to recruit the Helena members. A few members include the
         following:
       </ContentNoImg>
-      <FlexContainer>
+      <FlexContainer style={{ backgroundColor: "#d3e4fe" }}>
         <HelenaImg
           src={require("./BeatriceFihn.png")}
           name="Beatrice Fihn"
@@ -87,6 +104,8 @@ export default function Helena() {
         title="Impact"
         margin="afterImage"
         src={require("./HelenaDash.png")}
+        margin1="firstContent"
+        margin2="middle"
       >
         Helena has conducted a multitude of major projects. Helena’s most
         impactful project moved over 37M pieces of PPE to hospitals and health
@@ -97,12 +116,19 @@ export default function Helena() {
         hospitals needed PPE and in what quantities, as per the image on the
         left (above if you're on mobile).
       </ContentXImage>
-      <ContentNoImg title="Reflection" margin="afterImage">
+      <ContentNoImg
+        title="Reflection"
+        margin="afterImage"
+        margin1="middle"
+        margin2="lastContent"
+        color="#d3e4fe"
+      >
         The project achieved its impact and fundraising goals, and we were able
         to reach product/market fit relatively quickly. Two areas we could have
         improved upon were being more structured in the way we gathered user
         needs and incorporating a more agile approach to refining the concept.
       </ContentNoImg>
+      <PrevNext prev="/tornado" next="/zs" color="#d3e4fe" />
     </div>
   );
 }
@@ -118,9 +144,9 @@ const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-left: 57px;
-  margin-right: 57px;
+  padding-left: 57px;
+  padding-right: 57px;
   flex-wrap: wrap;
   gap: 2vw;
-  margin-top: 20px;
+  padding-top: 20px;
 `;

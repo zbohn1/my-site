@@ -93,6 +93,14 @@ function ProjectSection() {
           color="grey"
         />
         <Project
+          src={require("./visualizer.png")}
+          title="AUDIO VISUALIZER"
+          to="/audiovisualizer"
+          active={active}
+          value="Creative Tech"
+          color="white"
+        />
+        <Project
           src={require("./tornado.png")}
           title="TORNADO"
           to="/tornado"
@@ -118,7 +126,7 @@ function ProjectSection() {
         />
         <Project
           src={require("./icicles.png")}
-          title="Icicles"
+          title="ICICLES"
           to="/icicles"
           active={active}
           value="Creative Tech"
@@ -126,7 +134,7 @@ function ProjectSection() {
         />
         <Project
           src={require("./clock.png")}
-          title="Rainbow Clock"
+          title="RAINBOW CLOCK"
           to="/clock"
           active={active}
           value="Creative Tech"

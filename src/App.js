@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Header />
+      <Header color="#f5f5f5" />
       <FirstContent />
       <Divider />
       <ProjectSection />

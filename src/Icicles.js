@@ -6,13 +6,18 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentXVideo from "./ContentXVideo.js";
 import ContentNoImg from "./ContentNoImg.js";
+import PrevNext from "./PrevNext.js";
 
 export default function Icicles() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentXVideo src={require("./icicles.mp4")} title="P5JS Icicles">
+      <Header color="#f5f5f5" />
+      <ContentXVideo
+        src={require("./icicles.mp4")}
+        title="P5JS Icicles"
+        margin1="firstContent"
+      >
         I made these icicles in P5JS, a javascript 2D animation library that is
         built off of the canvas html element. It was for my class Creative Code.
         Our assignment was to design something that evoked the concept of
@@ -24,6 +29,7 @@ export default function Icicles() {
         times to mimic real icicles, and the icicles grow at random speeds to
         mimic the real world as well.
       </ContentXVideo>
+      <PrevNext prev="/zs" next="/clock" />
     </div>
   );
 }

@@ -6,13 +6,19 @@ import { Link } from "react-router-dom";
 import Header from "./Header.js";
 import ContentNoImg from "./ContentNoImg";
 import ContentXImage from "./ContentXImage";
+import PrevNext from "./PrevNext.js";
 
 export default function Zs() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <ContentNoImg title="ZS Associates ctDNA" margin="afterText">
+      <Header color="#efe6fe" />
+      <ContentNoImg
+        title="ZS Associates ctDNA"
+        margin1="firstContent"
+        margin2="middle"
+        color="#efe6fe"
+      >
         I worked at ZS Associates as a consultant advising companies on how to
         launch new products and also conducting market research. For this case
         study, our client was a circulating tumor DNA (ctDNA) company that
@@ -23,7 +29,7 @@ export default function Zs() {
         designed as a stand-alone or a multi-cancer test combined with the
         company’s colorectal cancer offering.
       </ContentNoImg>
-      <ContentNoImg title="Our Process" margin="afterText">
+      <ContentNoImg title="Our Process" margin1="middle" margin2="middle">
         First, we created a discussion guide. Then, we conducted qualitative
         interviews using this guide and created a qualitative report for the
         client. Next, we used the insights from the qualitative interviews to
@@ -41,6 +47,9 @@ export default function Zs() {
       <ContentNoImg
         title="Discussion Guide and Quantitative Survey"
         margin="afterText"
+        margin1="middle"
+        margin2="middle"
+        color="#efe6fe"
       >
         The discussion guide for the qualitative interviews focused on what
         physicians are currently doing, their preferences around blood-based
@@ -50,7 +59,12 @@ export default function Zs() {
         dynamics and then focused on future screening preferences to identify
         which product made the most sense to create.
       </ContentNoImg>
-      <ContentXImage title="Framework" src={require("./ZSImg1.png")}>
+      <ContentXImage
+        title="Framework"
+        src={require("./ZSImg1.png")}
+        margin1="middle"
+        margin2="middle"
+      >
         After we fielded the interviews and survey and analyzed the results, I
         worked with the team to create a framework that we used to provide a
         recommendation to the company on how to proceed. The framework focused
@@ -62,6 +76,9 @@ export default function Zs() {
       <ContentXImage
         title="Results and Reflection"
         src={require("./ZSImg2.png")}
+        margin1="middle"
+        margin2="lastContent"
+        color="#efe6fe"
       >
         We used the framework to score each parameter and provide a final
         recommendation. We recommended creating a targeted panel that adds lung
@@ -70,6 +87,7 @@ export default function Zs() {
         across the other metrics. The clients agreed with the recommendation and
         went on to develop the product.{" "}
       </ContentXImage>
+      <PrevNext prev="/helena" next="/icicles" color="#efe6fe" />
     </div>
   );
 }

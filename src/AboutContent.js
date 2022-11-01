@@ -8,6 +8,7 @@ export default function AboutContent(props) {
     <div>
       <Header>{props.header}</Header>
       <Text>{props.text}</Text>
+      {props.link}
     </div>
   );
 }

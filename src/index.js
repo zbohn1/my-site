@@ -15,6 +15,7 @@ import ProductFeedback from "./ProductFeedback.js";
 import Tornado from "./Tornado.js";
 import Icicles from "./Icicles.js";
 import Clock from "./Clock.js";
+import AudioVisualizer from "./AudioVisualizer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -33,6 +34,7 @@ root.render(
           <Route path="tornado" element={<Tornado />} />
           <Route path="icicles" element={<Icicles />} />
           <Route path="clock" element={<Clock />} />
+          <Route path="audiovisualizer" element={<AudioVisualizer />} />
         </Routes>
       </ScrollToTop>
     </HashRouter>
