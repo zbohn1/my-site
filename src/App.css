@@ -27,3 +27,34 @@
   src: local("Helvetica Neue UltraLight.ttf"),
     url("./fonts/Helvetica Neue UltraLight.ttf") format("truetype");
 }
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1;
+  z-index: 2;
+}
+
+.visible {
+  /* color: #08a38c; */
+  color: black;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  z-index: 3;
+  opacity: 1;
+  text-align: center;
+  transition: opacity 1s ease-out;
+  font-family: "Regular", "Hnmedium", Helvetica, Arial, sans-serif;
+}
+
+.fade-out-section {
+  opacity: 0;
+}

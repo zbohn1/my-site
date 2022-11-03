@@ -16,27 +16,30 @@ import Tornado from "./Tornado.js";
 import Icicles from "./Icicles.js";
 import Clock from "./Clock.js";
 import AudioVisualizer from "./AudioVisualizer.js";
+import { ContextProvider } from "./Context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HashRouter>
-      <ScrollToTop>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="about" element={<About />} />
-          <Route path="parakeet" element={<Parakeet />} />
-          <Route path="todo" element={<Todo />} />
-          <Route path="helena" element={<Helena />} />
-          <Route path="zs" element={<Zs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="productfeedback" element={<ProductFeedback />} />
-          <Route path="tornado" element={<Tornado />} />
-          <Route path="icicles" element={<Icicles />} />
-          <Route path="clock" element={<Clock />} />
-          <Route path="audiovisualizer" element={<AudioVisualizer />} />
-        </Routes>
-      </ScrollToTop>
-    </HashRouter>
+    <ContextProvider>
+      <HashRouter>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="about" element={<About />} />
+            <Route path="parakeet" element={<Parakeet />} />
+            <Route path="todo" element={<Todo />} />
+            <Route path="helena" element={<Helena />} />
+            <Route path="zs" element={<Zs />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="productfeedback" element={<ProductFeedback />} />
+            <Route path="tornado" element={<Tornado />} />
+            <Route path="icicles" element={<Icicles />} />
+            <Route path="clock" element={<Clock />} />
+            <Route path="audiovisualizer" element={<AudioVisualizer />} />
+          </Routes>
+        </ScrollToTop>
+      </HashRouter>
+    </ContextProvider>
   </React.StrictMode>
 );
