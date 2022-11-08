@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dcb0d48d.css",
-    "main.js": "/static/js/main.b680f833.js",
+    "main.js": "/static/js/main.b8e0bb5f.js",
     "static/media/ProductFeedbackScreencast.mp4": "/static/media/ProductFeedbackScreencast.a5844a3763c0cb5c8b37.mp4",
     "static/media/RainbowVisualizer.mp4": "/static/media/RainbowVisualizer.127fd338b262e0cc11c1.mp4",
     "static/media/tornado.mp4": "/static/media/tornado.4dac408bce87bbe51bcc.mp4",
@@ -39,10 +39,10 @@
     "static/media/Helvetica Neue Medium Extended.ttf": "/static/media/Helvetica Neue Medium Extended.372d58a9bf10285baebe.ttf",
     "index.html": "/index.html",
     "main.dcb0d48d.css.map": "/static/css/main.dcb0d48d.css.map",
-    "main.b680f833.js.map": "/static/js/main.b680f833.js.map"
+    "main.b8e0bb5f.js.map": "/static/js/main.b8e0bb5f.js.map"
   },
   "entrypoints": [
     "static/css/main.dcb0d48d.css",
-    "static/js/main.b680f833.js"
+    "static/js/main.b8e0bb5f.js"
   ]
 }
