@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcb0d48d.css",
-    "main.js": "/static/js/main.b8e0bb5f.js",
+    "main.css": "/static/css/main.6458928b.css",
+    "main.js": "/static/js/main.772a319b.js",
     "static/media/ProductFeedbackScreencast.mp4": "/static/media/ProductFeedbackScreencast.a5844a3763c0cb5c8b37.mp4",
     "static/media/RainbowVisualizer.mp4": "/static/media/RainbowVisualizer.127fd338b262e0cc11c1.mp4",
     "static/media/tornado.mp4": "/static/media/tornado.4dac408bce87bbe51bcc.mp4",
@@ -37,12 +37,13 @@
     "static/media/ToDoImg2.png": "/static/media/ToDoImg2.4ce0b492d9396f549ea1.png",
     "static/media/RichLesser.png": "/static/media/RichLesser.642dc1bc21bda9c864b5.png",
     "static/media/Helvetica Neue Medium Extended.ttf": "/static/media/Helvetica Neue Medium Extended.372d58a9bf10285baebe.ttf",
+    "static/media/JewishStar.jpg": "/static/media/JewishStar.2b7de8c8749bc9cac548.jpg",
     "index.html": "/index.html",
-    "main.dcb0d48d.css.map": "/static/css/main.dcb0d48d.css.map",
-    "main.b8e0bb5f.js.map": "/static/js/main.b8e0bb5f.js.map"
+    "main.6458928b.css.map": "/static/css/main.6458928b.css.map",
+    "main.772a319b.js.map": "/static/js/main.772a319b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcb0d48d.css",
-    "static/js/main.b8e0bb5f.js"
+    "static/css/main.6458928b.css",
+    "static/js/main.772a319b.js"
   ]
 }
