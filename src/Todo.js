@@ -67,7 +67,7 @@ export default function Todo() {
           ></Frame>
         </ImgContainer>
       </FlexContainer>
-      <PrevNext prev="/parakeet" next="/audiovisualizer" />
+      <PrevNext prev="/helena" next="/zs" />
     </div>
   );
 }

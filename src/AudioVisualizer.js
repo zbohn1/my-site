@@ -40,7 +40,7 @@ export default function AudioVisualizer() {
         effect where values in the cross would pick up softer frequencies, while
         values toward the corners would show only with larger frequencies.
       </ContentNoImg>
-      <PrevNext prev="/todo" next="/tornado" />
+      <PrevNext prev="/ASMain" next="/tornado" />
     </div>
   );
 }

@@ -25,15 +25,19 @@ export default function About() {
           <Sectioner />
           <AboutContent
             header="My Background:"
-            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging and creative technologies. I am currently interning at Seminaut Games Studios as a front-end development and UX design intern. Previously, I spent two years in management consulting, where I advised on corporate strategy, performed marketing and other market research, and helped design and launch a new consulting digital product. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders."
+            text="I’m a masters student in Creative Technology and Design at CU Boulder, where I’m focused on full-stack web development, UI and UX design, and emerging and creative technologies. I am currently interning at Seminaut Games Studios, where I am leading the build-out of their design system and component library. Previously, I spent two years in management consulting, where I advised on corporate strategy, performed marketing and other market research, and helped design and launch a new consulting digital product. I graduated from the USC Marshall School of Business and co-founded Helena.org, a non-profit which tackles societal problems by leveraging the influence and capital of world leaders."
           />
           <AboutContent
             header="My Process:"
             text="My process is to identify a target user with a problem, identify a solution to that user’s problem, test it through user interviews and rapid prototyping, and repeat the cycle."
           />
           <AboutContent
-            header="Technical Skills: "
-            text="HTML5, CSS3, JavaScript, React, ThreeJS, P5JS, SASS, Python, SQL, Flask, Figma, Styled-Components"
+            header="Development Skills "
+            text="HTML5, CSS3, JavaScript, React, Three.JS, P5.JS, SASS, Python, SQL, Flask, Styled-Components"
+          />
+          <AboutContent
+            header="Design Skills: "
+            text="Figma, Sketch, Rapid Prototyping, Interaction Design, UX Research"
           />
           <ButtonContainer>
             <Link to="/contact">
@@ -91,6 +95,9 @@ const Title = styled.h2`
     text-align: center;
     margin-bottom: 19px;
     font-size: 35px;
+    margin-left: 57px;
+    margin-right: 57px;
+    font-size: 30px;
   }
 `;
 const ImgContainer = styled.div`
@@ -126,6 +133,9 @@ const Button = styled.button`
   &:hover {
     opacity: 0.71;
   }
+  @media (max-width: 700px) {
+    width: 150px;
+  }
 `;
 
 const Button2 = styled.button`
@@ -141,10 +151,17 @@ const Button2 = styled.button`
   &:hover {
     opacity: 0.71;
   }
+  @media (max-width: 700px) {
+    width: 150px;
+  }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
+  @media (max-width: 700px) {
+    margin-left: 57px;
+    margin-right: 57px;
+  }
 `;

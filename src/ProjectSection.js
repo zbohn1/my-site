@@ -85,12 +85,12 @@ function ProjectSection() {
           color="grey"
         />
         <Project
-          src={require("./ToDoImg2.png")}
-          title="TO DO"
-          to="/todo"
+          src={require("./JewishStar.jpg")}
+          title="ANTI-SEMITISM"
+          to="/ASMain"
           active={active}
           value="Web Dev"
-          color="grey"
+          color="white"
         />
         <Project
           src={require("./visualizer.png")}
@@ -114,6 +114,14 @@ function ProjectSection() {
           to="/helena"
           active={active}
           value="Business"
+          color="grey"
+        />
+        <Project
+          src={require("./ToDoImg2.png")}
+          title="TO DO"
+          to="/todo"
+          active={active}
+          value="Web Dev"
           color="grey"
         />
         <Project

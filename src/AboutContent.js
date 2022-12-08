@@ -18,6 +18,10 @@ const Header = styled.h6`
   margin-bottom: 14px;
   font-family: "Bold", "Hnmedium", Helvetica, Arial, sans-serif;
   font-size: 20px;
+  @media (max-width: 700px) {
+    margin-left: 57px;
+    margin-right: 57px;
+  }
 `;
 
 const Text = styled.p`
@@ -26,4 +30,8 @@ const Text = styled.p`
   font-family: "Regular", "Hnmedium", Helvetica, Arial, sans-serif;
   color: #000000;
   opacity: 0.71;
+  @media (max-width: 700px) {
+    margin-left: 57px;
+    margin-right: 57px;
+  }
 `;

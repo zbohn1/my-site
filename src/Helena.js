@@ -128,7 +128,7 @@ export default function Helena() {
         improved upon were being more structured in the way we gathered user
         needs and incorporating a more agile approach to refining the concept.
       </ContentNoImg>
-      <PrevNext prev="/tornado" next="/zs" color="#d3e4fe" />
+      <PrevNext prev="/tornado" next="/todo" color="#d3e4fe" />
     </div>
   );
 }

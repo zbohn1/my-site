@@ -17,29 +17,29 @@ import Icicles from "./Icicles.js";
 import Clock from "./Clock.js";
 import AudioVisualizer from "./AudioVisualizer.js";
 import { ContextProvider } from "./Context";
+import ASMain from "./ASMain.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ContextProvider>
-      <HashRouter>
-        <ScrollToTop>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="about" element={<About />} />
-            <Route path="parakeet" element={<Parakeet />} />
-            <Route path="todo" element={<Todo />} />
-            <Route path="helena" element={<Helena />} />
-            <Route path="zs" element={<Zs />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="productfeedback" element={<ProductFeedback />} />
-            <Route path="tornado" element={<Tornado />} />
-            <Route path="icicles" element={<Icicles />} />
-            <Route path="clock" element={<Clock />} />
-            <Route path="audiovisualizer" element={<AudioVisualizer />} />
-          </Routes>
-        </ScrollToTop>
-      </HashRouter>
-    </ContextProvider>
-  </React.StrictMode>
+  <ContextProvider>
+    <HashRouter>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="about" element={<About />} />
+          <Route path="parakeet" element={<Parakeet />} />
+          <Route path="todo" element={<Todo />} />
+          <Route path="helena" element={<Helena />} />
+          <Route path="zs" element={<Zs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="productfeedback" element={<ProductFeedback />} />
+          <Route path="tornado" element={<Tornado />} />
+          <Route path="icicles" element={<Icicles />} />
+          <Route path="clock" element={<Clock />} />
+          <Route path="audiovisualizer" element={<AudioVisualizer />} />
+          <Route path="ASMain" element={<ASMain />} />
+        </Routes>
+      </ScrollToTop>
+    </HashRouter>
+  </ContextProvider>
 );

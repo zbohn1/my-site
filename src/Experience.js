@@ -27,6 +27,8 @@ export default function Experience() {
   let classListCounter = 0;
   let experienceRemoveCounter = 0;
   let animationCounter = 0;
+  let scrollX = 0;
+  let deltaX = 0;
 
   camera.position.z = 40;
   camera.position.y = 0;
@@ -41,22 +43,22 @@ export default function Experience() {
   camera.far = 3000;
   camera.aspect = window.innerWidth / window.innerHeight;
 
-  window.addEventListener("wheel", (event) => {
-    deltaY = scrollY + event.deltaY / window.innerHeight;
-    scrollY += event.deltaY / window.innerHeight;
-  });
-
-  document.body.style.overflow = "hidden";
-  document.body.classList.add("no-scroll");
+  let webContent = document.querySelector("#web-content");
+  webContent.style.opacity = "0";
 
   useFrame((state, delta) => {
+    if (rocketRef) {
+      webContent.style.opacity = "1";
+    }
     if (rocket && scrollY < 1.5 && scrollY >= 0) {
       rocketRef.current.rotation.x = -scrollY;
     }
 
     if (rocket && scrollY >= 1.5) {
-      rocketRef.current.position.z += 0.25 * -deltaY;
-      camera.position.z += 0.25 * -deltaY;
+      // rocketRef.current.position.z += 0.25 * -deltaY;
+      rocketRef.current.position.z += 0.25 * -scrollY;
+      // camera.position.z += 0.25 * -deltaY;
+      camera.position.z += 0.25 * -scrollY;
     }
 
     if (rocket && rocketRef.current.position.z < -12) {
@@ -98,9 +100,11 @@ export default function Experience() {
     }
 
     deltaY = 0;
+    deltaX = window.scrollY;
     changeCounter = 0;
     deltaPositionHelper1 = rocketRef.current.position.z;
     animationCounter++;
+    scrollY += 0.01;
   });
 
   return (

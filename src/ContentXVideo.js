@@ -10,23 +10,25 @@ export default function ContentXVideo(props) {
     lastContent: 0 + "px",
   };
   return (
-    <FlexContainer
-      color={props.color}
-      style={{
-        paddingTop: marginStyles[props.margin1],
-        paddingBottom: marginStyles[props.margin2],
-      }}
-    >
-      <ImgContainer>
-        <LeftVideo width="560" height="315" autoPlay loop muted>
-          <source src={props.src} type="video/mp4" />
-        </LeftVideo>
-      </ImgContainer>
+    <>
+      <FlexContainer
+        color={props.color}
+        style={{
+          paddingTop: marginStyles[props.margin1],
+          paddingBottom: marginStyles[props.margin2],
+        }}
+      >
+        <ImgContainer>
+          <LeftVideo width="560" height="315" autoPlay loop muted>
+            <source src={props.src} type="video/mp4" />
+          </LeftVideo>
+        </ImgContainer>
+      </FlexContainer>
       <ContentContainer>
         <Title> {props.title}</Title>
         <Text>{props.children}</Text>
       </ContentContainer>
-    </FlexContainer>
+    </>
   );
 }
 
@@ -49,6 +51,7 @@ const FlexContainer = styled.div`
 const LeftVideo = styled.video`
   min-width: 300px;
   height: 100%;
+  max-height: 450px;
   width: 100%;
 `;
 
@@ -69,6 +72,14 @@ const Text = styled.p`
 
 const ContentContainer = styled.div`
   flex: 1;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @media (max-width: 700px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
 
 const Title = styled.h2`

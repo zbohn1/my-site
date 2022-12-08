@@ -87,7 +87,7 @@ export default function Zs() {
         across the other metrics. The clients agreed with the recommendation and
         went on to develop the product.{" "}
       </ContentXImage>
-      <PrevNext prev="/helena" next="/icicles" color="#efe6fe" />
+      <PrevNext prev="/todo" next="/icicles" color="#efe6fe" />
     </div>
   );
 }

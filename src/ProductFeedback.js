@@ -44,8 +44,9 @@ export default function ProductFeedback() {
       <ContentNoImg
         margin="afterImage"
         title="Problem"
-        margin1="middle"
+        margin1="firstContent"
         margin2="middle"
+        color="#efe6fe"
       >
         The key problem for this project was how to implement the design with
         technology. In addition to what languages to choose, I needed to learn
@@ -61,7 +62,6 @@ export default function ProductFeedback() {
         title="Solution"
         margin1="middle"
         margin2="middle"
-        color="#efe6fe"
       >
         I chose React for the application because there were many reusable
         pieces of design that I could turn into components, and also because I
@@ -80,6 +80,7 @@ export default function ProductFeedback() {
         title="Reflection"
         margin1="middle"
         margin2="lastContent"
+        color="#efe6fe"
       >
         I had not been introduced to the single responsibility principle when I
         started this project, so although I intuitively followed it to a large

@@ -4,7 +4,7 @@ import GlobalStyles from "./GlobalStyles";
 import FirstContent from "./FirstContent";
 import Divider from "./Divider.js";
 import ProjectSection from "./ProjectSection";
-import "./App.css";
+import styles from "./App.module.css";
 import React, { useContext } from "react";
 import { Context } from "./Context";
 
@@ -21,7 +21,7 @@ let height = Math.round(window.innerHeight / 600);
 console.log(height);
 let height2 = Math.round(window.innerHeight * 0.5);
 let cssProperty = {
-  clipPath: "circle(" + height + "% at 50% " + height2 + "px)",
+  clipPath: "circle(" + 0 + "% at 50% " + height2 + "px)",
 };
 
 function App(props) {
@@ -30,7 +30,7 @@ function App(props) {
   return (
     <div>
       {animationPresent && (
-        <div className="App">
+        <div className={styles.App}>
           <Canvas
             id="sceneDom"
             gl={{
@@ -47,8 +47,8 @@ function App(props) {
           >
             <Experience id="experience" />
           </Canvas>
-          <h2 id="text" className="visible">
-            Welcome to my portfolio. Scroll down to continue.
+          <h2 id="text" className={styles.visible}>
+            Welcome to my portfolio!
           </h2>
         </div>
       )}

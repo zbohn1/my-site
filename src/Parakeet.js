@@ -179,7 +179,7 @@ export default function Parakeet() {
         in a minimum viable product, rather than focusing on building out a very
         large amount of functionality upfront.{" "}
       </ContentNoImg>
-      <PrevNext prev="/productfeedback" next="/todo" color="#d3e4fe" />
+      <PrevNext prev="/productfeedback" next="/ASMain" color="#d3e4fe" />
     </div>
   );
 }
